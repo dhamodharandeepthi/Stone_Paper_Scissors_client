@@ -16,7 +16,7 @@ https://stone-papper-scissors-mern.netlify.app/
 
 ## Demo video
 
-
+https://github.com/user-attachments/assets/7eefecdd-2485-45a8-8db3-8538c9a6e5ad
 
 ## Tech Stack
 
