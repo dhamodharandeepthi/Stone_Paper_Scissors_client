@@ -1,8 +1,64 @@
-# React + Vite
+# Stone, Paper, Scissors Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple **Stone, Paper, Scissors** game built using the MERN stack (MongoDB, Express, React, Node.js) with an API to save and retrieve game data. Players can play multiple rounds of the game, and the results are stored in a MongoDB database. The application provides a feature to view all past games.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Play a Game**: Two players can play up to 6 rounds of the Stone, Paper, Scissors game.
+- **Track Scores**: The app tracks and displays the score for each player.
+- **Game Results**: After the game, the winner is determined and displayed.
+- **Game History**: All past games are stored in the MongoDB database and can be viewed on the All Games page.
+- **Responsive UI**: The application is styled using Material-UI, providing a modern and responsive design.
+
+## App link
+
+https://stone-papper-scissors-mern.netlify.app/
+
+## Demo video
+
+
+
+## Tech Stack
+
+- **Frontend**: React, Material-UI
+- **Backend**: Node.js, Express.js
+- **Database**: MongoDB, Mongoose
+- **HTTP Requests**: Axios
+- **Routing**: React Router DOM
+
+## API Endpoints
+
+**POST /api/games**
+
+Create a new game with the following body
+
+```javascript
+{
+  "player1": "Player 1 Name",
+  "player2": "Player 2 Name",
+  "rounds": [
+    {
+      "player1Choice": "Stone",
+      "player2Choice": "Scissors",
+      "result": "Player 1"
+    }
+  ],
+  "winner": "Player 1"
+}
+```
+
+## Dependencies
+
+### Backend
+
+- **express:** Web framework for Node.js
+- **mongoose:** MongoDB object modeling for Node.js
+- **cors:** Middleware to enable CORS
+- **dotenv:** Environment variable management
+
+### Frontend
+
+- **react:** JavaScript library for building user interfaces
+- **axios:** Promise-based HTTP client for the browser and Node.js
+- **react-router-dom:** Declarative routing for React apps
+- **@mui/material:** Material-UI component library
