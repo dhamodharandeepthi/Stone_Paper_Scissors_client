@@ -22,6 +22,8 @@ function AllGamesPage() {
         const fetchGames = async () => {
             const response = await axios.get('https://stone-paper-scissors-server.onrender.com/api/games');
             setGames(response.data);
+            console.log("data",response.data);
+            
         };
         fetchGames();
     }, []);
